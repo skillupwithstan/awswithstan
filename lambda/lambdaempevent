@@ -1,0 +1,18 @@
+import json
+
+def lambda_handler(event, context):
+    # TODO implement
+    print("Welcome to AWS with Stan - Lambda Function 2")
+
+    if event["Employee ID"]  == "01":
+        return "Employee ID 01 corresponds to Engineer: Stan"
+    elif event["Employee ID"]  == "02":
+        return "Employee ID 02 corresponds to Engineer: Anto"
+    elif event["Employee ID"]  == "03":
+        return "Employee ID 03 corresponds to Engineer: Raj"
+    else:
+        return "No Matching Engineer for this Employee ID"
+    
+{
+    "Employee ID": "02"
+}
